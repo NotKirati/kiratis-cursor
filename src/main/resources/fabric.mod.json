@@ -1,0 +1,35 @@
+{
+	"schemaVersion": 1,
+	"id": "kiratis-cursor",
+	"version": "${version}",
+	"name": "Kirati's Cursor",
+	"description": "Personal Custom software cursor.",
+	"authors": [
+		"Kirati"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/kiratis-cursor/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"client": [
+			"me.kirati.KiratisCursorClient"
+		],
+		"modmenu": [
+          "me.kirati.config.ModMenuIntegration"
+		]
+	},
+	"accessWidener": "kiratis-cursor.accesswidener",
+	"mixins": [
+		"kiratis-cursor.client.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	}
+}
